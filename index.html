@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе — Путешественник</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .projects-list {
+            column-count: 2;
+            column-gap: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Соколова Виктория</h1>
+                <p>Страница путешественника</p>
+            </div>
+            <button type="button" id="toggle-theme-btn" class="theme-btn" title="Переключить тему">🌙 Тема</button>
+        </div>
+    </header>
+
+    <nav class="sticky-nav">
+        <a href="#skills">Навыки</a>
+        <a href="#stats">Статистика</a>
+        <a href="#interactive-skills">Мои навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Форма</a>
+        <a href="#favorite">Любимое место</a>
+    </nav>
+
+    <main>
+        
+        <div class="avatar-wrapper">
+            <img src="assets/avatar.png" alt="Фото путешественника" width="200" height="200">
+            <span class="badge">PRO</span>
+        </div>
+
+        <section id="skills">
+            <h2 class="static-heading">Навыки</h2>
+            <div class="skills-container">
+                <article class="skill-card">
+                    <dl>
+                        <dt>Планирование маршрутов</dt>
+                        <dd class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;">90%</div>
+                        </dd>
+                    </dl>
+                </article>
+                <article class="skill-card">
+                    <dl>
+                        <dt>Знание иностранных языков</dt>
+                        <dd class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;">75%</div>
+                        </dd>
+                    </dl>
+                </article>
+                <article class="skill-card">
+                    <dl>
+                        <dt>Ориентирование на местности</dt>
+                        <dd class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;">85%</div>
+                        </dd>
+                    </dl>
+                </article>
+                <article class="skill-card">
+                    <dl>
+                        <dt>Фотография природного ландшафта</dt>
+                        <dd class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;">80%</div>
+                        </dd>
+                    </dl>
+                </article>
+            </div>
+        </section>
+
+        <section id="stats" class="stats-section">
+            <h2>Статистика прогресса</h2>
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <h3>Страны</h3>
+                    <p class="stat-value">12</p>
+                </article>
+                <article class="stat-card">
+                    <h3>Города</h3>
+                    <p class="stat-value">47</p>
+                </article>
+                <article class="stat-card">
+                    <h3>Фото</h3>
+                    <p class="stat-value">1250</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="interactive-skills">
+            <h2>Управление навыками</h2>
+            <p>Добавляйте и удаляйте навыки для поездок.</p>
+            
+            <div class="controls">
+                <button type="button" id="add-skill-btn">Добавить навык</button>
+                <button type="button" id="clear-skills-btn">Очистить навыки</button>
+                <button type="button" id="toggle-visibility-btn">Скрыть список навыков</button>
+            </div>
+
+            <ul id="skills-list">
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            <ol class="projects-list">
+                <li id="italy">Италия — Рим и Флоренция</li>
+                <li id="france">Франция — Париж и Лазурный берег</li>
+                <li id="spain">Испания — Барселона</li>
+                <li id="greece">Греция — Санторини</li>
+            </ol>
+        </section>
+
+        <section id="contact">
+            <div class="section-header">
+                <h2>Форма обратной связи</h2>
+                <button type="button" id="toggle-form-btn" class="small-btn">Скрыть форму</button>
+            </div>
+            <form id="contact-form" action="#" method="post">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Имя" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" rows="5" placeholder="Сообщение" required></textarea>
+                
+                <button type="submit" style="font-size: 16px;">Отправить</button>
+            </form>
+        </section>
+
+    </main>
+
+    <aside id="favorite">
+        <h2>Любимое место</h2>
+        <p>Санторини, Греция</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Соколова Виктория</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="dom.js"></script>
+
+</body>
+</html>
