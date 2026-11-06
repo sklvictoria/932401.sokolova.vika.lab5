@@ -485,7 +485,6 @@ body.theme-dark .theme-btn:hover {
         font-size: 28px;
     }
     
-    /* Адаптивность для ЛР №5 */
     .header-content {
         flex-direction: column;
         text-align: center;
