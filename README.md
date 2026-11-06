@@ -19,8 +19,8 @@
 ``` 
 
 Поиск элементов
-getElementById — для списка навыков (#skills-list) и кнопок управления
-querySelector / querySelectorAll — для поиска <li> и <span> внутри них
+1. getElementById для списка навыков и кнопок управления
+2. querySelector / querySelectorAll для поиска <li> и <span> внутри них
 
 Интерактивность
 Кнопка «Добавить навык» — создание <li> с кнопкой «Удалить»
