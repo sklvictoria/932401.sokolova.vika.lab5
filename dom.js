@@ -96,11 +96,11 @@
     }
 
     function toggleSkillsVisibility() {
-        skillsList.classList.toggle('invisible');
-        const isHidden = skillsList.classList.contains('invisible');
-        toggleVisibilityBtn.textContent = isHidden
-            ? 'Показать список навыков'
-            : 'Скрыть список навыков';
+    interactiveSection.classList.toggle('invisible');
+    const isHidden = interactiveSection.classList.contains('invisible');
+    toggleVisibilityBtn.textContent = isHidden
+        ? 'Показать секцию навыков'
+        : 'Скрыть список навыков';
     }
 
     function toggleFormVisibility() {
