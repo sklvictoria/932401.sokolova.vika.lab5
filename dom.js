@@ -100,7 +100,7 @@
     const isHidden = interactiveSection.classList.contains('invisible');
     toggleVisibilityBtn.textContent = isHidden
         ? 'Показать секцию навыков'
-        : 'Скрыть список навыков';
+        : 'Скрыть секцию навыков';
     }
 
     function toggleFormVisibility() {
